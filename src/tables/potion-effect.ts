@@ -1,7 +1,7 @@
 import * as app from "../app.js"
 
 export interface PotionEffect {
-  potionName: app.PotionName
+  potionName: app.Potion
   effectName: app.EffectName
   value: number
 }

@@ -2,7 +2,7 @@ import * as app from "../app.js"
 
 export interface PlayerTemporary {
   playerId: number
-  temporaryName: app.TemporaryName
+  temporaryId: number
   endAt: number
 }
 

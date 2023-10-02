@@ -1,8 +1,8 @@
 import * as app from "../app.js"
 
 export interface Potion {
-  name: app.PotionName
-  worldName: app.WorldName
+  name: app.Potion
+  worldId: number
   cost: number
 }
 

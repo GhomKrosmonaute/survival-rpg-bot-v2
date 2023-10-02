@@ -2,7 +2,7 @@ import * as app from "../app.js"
 
 export interface PlayerEquipment {
   playerId: number
-  equipmentName: app.EquipmentName
+  equipmentName: app.Equipment
 }
 
 export default new app.Table<PlayerEquipment>({

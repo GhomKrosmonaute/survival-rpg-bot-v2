@@ -1,32 +1,32 @@
-export enum EquipmentSlotName {
-  Head = "tête",
-  Neck = "cou",
-  Chest = "poitrine",
-  Belt = "ceinture",
-  Legs = "jambes",
-  Feet = "pieds",
-  Hand = "mains",
-  Finger = "doigts",
+enum EquipmentSlot {
+  Head,
+  Neck,
+  Chest,
+  Belt,
+  Legs,
+  Feet,
+  Hand,
+  Finger,
 }
 
-export enum StatName {
-  Strength = "puissance",
-  Resistance = "résistance",
-  Luck = "chance",
+enum Stat {
+  Strength,
+  Resistance,
+  Luck,
 }
 
-export enum TemporaryName {
-  Strength = "puissance",
-  Resistance = "résistance",
-  Luck = "chance",
-  Drunkenness = "ivresse",
+enum Temporary {
+  Strength,
+  Resistance,
+  Luck,
+  Drunkenness,
 }
 
-export enum WorldName {
-  Euphoria = "euphoria",
+enum World {
+  Euphoria,
 }
 
-export enum EquipmentName {
+enum Equipment {
   LowQualityHelmet = "couvre-tête en cuir",
   LowQualityNecklace = "collier de fleurs",
   LowQualityChest = "manteau en cuir",
@@ -81,17 +81,17 @@ export enum EquipmentName {
   GoodQualityMagicWandNature = "baguette phytokinésique",
 }
 
-export enum ResourceName {
-  Wood = "bois",
-  Leather = "cuir",
-  Rock = "roche",
-  Iron = "fer",
-  MerlinPowder = "poudre de merlin",
-  Gold = "or",
-  Diamond = "diamant",
+enum Resource {
+  Wood,
+  Leather,
+  Rock,
+  Iron,
+  MerlinPowder,
+  Gold,
+  Diamond,
 }
 
-export enum EnemyName {
+enum EnemyName {
   BabyVampire = "futur vampire",
   Slime = "slime",
   Zombie = "zombie",
@@ -120,9 +120,9 @@ export enum EnemyName {
   SupremePhoenix = "phénix suprême",
 }
 
-export enum ItemName {}
+enum Item {}
 
-export enum PotionName {
+enum Potion {
   LowQualityHealing = "fiole de guérison",
   MediumQualityHealing = "fiole de guérison supérieure",
   GoodQualityHealing = "wakfu embouteillé",
@@ -133,9 +133,13 @@ export enum PotionName {
   Life = "fiole de jouvence",
 }
 
-export enum EffectName {
+enum EffectName {
   Heal = "soin",
   Life = "jouvence",
+}
+
+enum Title {
+  BeginnerAdventurer,
 }
 
 export enum Logo {
@@ -147,6 +151,7 @@ export enum Logo {
   Healing = "💖",
   MoreLife = "💝",
 
+  Lance = "lance",
   Crossbow = "arbalete",
   Ring = "bague",
   MagicWand = "baguettemagique",
@@ -217,4 +222,6 @@ export enum Logo {
   Focused = "🧘",
   Hardened = "🤺",
   Alcoholic = "🍻",
+
+  Shell = "🐚",
 }

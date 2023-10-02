@@ -2,7 +2,7 @@ import * as app from "../app.js"
 
 export interface PlayerItem {
   playerId: number
-  itemName: app.ItemName
+  itemName: app.Item
   amount: number
 }
 

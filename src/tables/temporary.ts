@@ -1,8 +1,9 @@
 import * as app from "../app.js"
 
 export interface Temporary {
-  name: app.TemporaryName
-  worldName: app.WorldName
+  id: app.Temporary
+  name: string
+  worldId: number
   logo: app.Logo
   description: string
 }
@@ -11,7 +12,8 @@ export default new app.Table<Temporary>({
   name: "temporary",
   description: "The temporary table",
   setup: (table) => {
-    table.string("name").notNullable().primary().unique()
+    table.increments("id", { primaryKey: true })
+    table.string("name").notNullable()
     table
       .string("worldName")
       .references("name")
@@ -22,29 +24,29 @@ export default new app.Table<Temporary>({
   },
 })
 
-export const temporaries: Temporary[] = [
+export const temporaries: Omit<Temporary, "id">[] = [
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.TemporaryName.Strength,
+    worldId: 0,
+    name: "puissance",
     logo: app.Logo.Strength,
     description: "Augmente votre puissance d'attaque de 10%.",
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.TemporaryName.Resistance,
+    worldId: 0,
+    name: "résistance",
     logo: app.Logo.Resistance,
     description: "Augmente votre résistance aux attaques adverses de 10%.",
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.TemporaryName.Luck,
+    worldId: 0,
+    name: "chance",
     logo: app.Logo.Luck,
     description:
       "Augmente vos chances de coup critique et vos esquives de 10%.",
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.TemporaryName.Drunkenness,
+    worldId: 0,
+    name: "ivresse",
     logo: app.Logo.Beer,
     description:
       "Augmente votre chance de coup critique de 10% et diminue votre puissance et votre résistance de 5%.",

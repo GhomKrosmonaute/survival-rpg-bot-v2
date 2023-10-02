@@ -2,7 +2,7 @@ import * as app from "../app.js"
 
 export interface PlayerPotion {
   playerId: number
-  potionName: app.PotionName
+  potionName: app.Potion
   amount: number
 }
 

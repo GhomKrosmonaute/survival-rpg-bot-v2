@@ -1,8 +1,8 @@
 import * as app from "../app.js"
 
 export interface EquipmentStat {
-  equipmentName: app.EquipmentName
-  statName: app.StatName
+  equipmentName: app.Equipment
+  statName: app.Stat
   amount: number
 }
 

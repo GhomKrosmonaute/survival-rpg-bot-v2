@@ -1,8 +1,8 @@
 import * as app from "../app.js"
 
 export interface EquipmentSlot {
-  name: app.EquipmentSlotName
-  worldName: app.WorldName
+  name: app.EquipmentSlot
+  worldId: number
   size: number
 }
 
@@ -22,43 +22,43 @@ export default new app.Table<EquipmentSlot>({
 
 export const equipmentSlots: EquipmentSlot[] = [
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentSlotName.Head,
+    worldId: 0,
+    name: app.EquipmentSlot.Head,
     size: 1,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentSlotName.Neck,
+    worldId: 0,
+    name: app.EquipmentSlot.Neck,
     size: 1,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentSlotName.Chest,
+    worldId: 0,
+    name: app.EquipmentSlot.Chest,
     size: 1,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentSlotName.Belt,
+    worldId: 0,
+    name: app.EquipmentSlot.Belt,
     size: 1,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentSlotName.Legs,
+    worldId: 0,
+    name: app.EquipmentSlot.Legs,
     size: 1,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentSlotName.Feet,
+    worldId: 0,
+    name: app.EquipmentSlot.Feet,
     size: 1,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentSlotName.Hand,
+    worldId: 0,
+    name: app.EquipmentSlot.Hand,
     size: 2,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentSlotName.Finger,
+    worldId: 0,
+    name: app.EquipmentSlot.Finger,
     size: 8,
   },
 ]

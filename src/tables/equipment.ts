@@ -1,9 +1,9 @@
 import * as app from "../app.js"
 
 export interface Equipment {
-  name: app.EquipmentName
-  worldName: app.WorldName
-  slotName: app.EquipmentSlotName
+  name: app.Equipment
+  worldId: number
+  slotName: app.EquipmentSlot
   size: number
   logo: app.Logo
   cost: number
@@ -34,82 +34,82 @@ export default new app.Table<Equipment>({
 
 export const equipments: Equipment[] = [
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentName.LowQualityHelmet,
+    worldId: 0,
+    name: app.Equipment.LowQualityHelmet,
     logo: app.Logo.Helmet,
-    slotName: app.EquipmentSlotName.Head,
+    slotName: app.EquipmentSlot.Head,
     cost: 15,
     durability: 20,
     size: 1,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentName.LowQualityNecklace,
+    worldId: 0,
+    name: app.Equipment.LowQualityNecklace,
     logo: app.Logo.Necklace,
-    slotName: app.EquipmentSlotName.Neck,
+    slotName: app.EquipmentSlot.Neck,
     cost: 10,
     durability: 20,
     size: 1,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentName.LowQualityChest,
+    worldId: 0,
+    name: app.Equipment.LowQualityChest,
     logo: app.Logo.Chest,
-    slotName: app.EquipmentSlotName.Chest,
+    slotName: app.EquipmentSlot.Chest,
     cost: 20,
     durability: 20,
     size: 1,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentName.LowQualityRing,
+    worldId: 0,
+    name: app.Equipment.LowQualityRing,
     logo: app.Logo.Ring,
-    slotName: app.EquipmentSlotName.Finger,
+    slotName: app.EquipmentSlot.Finger,
     cost: 15,
     durability: 20,
     size: 1,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentName.LowQualityBelt,
+    worldId: 0,
+    name: app.Equipment.LowQualityBelt,
     logo: app.Logo.String,
-    slotName: app.EquipmentSlotName.Belt,
+    slotName: app.EquipmentSlot.Belt,
     cost: 5,
     durability: 20,
     size: 1,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentName.LowQualityLegs,
+    worldId: 0,
+    name: app.Equipment.LowQualityLegs,
     logo: app.Logo.Leggings,
-    slotName: app.EquipmentSlotName.Legs,
+    slotName: app.EquipmentSlot.Legs,
     cost: 15,
     durability: 20,
     size: 0.5,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentName.LowQualityFeet,
+    worldId: 0,
+    name: app.Equipment.LowQualityFeet,
     logo: app.Logo.Boots,
-    slotName: app.EquipmentSlotName.Feet,
+    slotName: app.EquipmentSlot.Feet,
     cost: 10,
     durability: 20,
     size: 0.4,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentName.LowQualityFeet2,
+    worldId: 0,
+    name: app.Equipment.LowQualityFeet2,
     logo: app.Logo.Boots,
-    slotName: app.EquipmentSlotName.Feet,
+    slotName: app.EquipmentSlot.Feet,
     cost: 20,
     durability: 20,
     size: 0.6,
   },
   {
-    worldName: app.WorldName.Euphoria,
-    name: app.EquipmentName.LowQualityHand,
+    worldId: 0,
+    name: app.Equipment.LowQualityHand,
     logo: app.Logo.Shield,
-    slotName: app.EquipmentSlotName.Hand,
+    slotName: app.EquipmentSlot.Hand,
     cost: 20,
     durability: 20,
     size: 0.6,

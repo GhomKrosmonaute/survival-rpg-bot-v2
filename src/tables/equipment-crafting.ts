@@ -5,7 +5,7 @@ import * as app from "../app.js"
  */
 export interface EquipmentCrafting {
   id: number
-  equipmentName: app.EquipmentName
+  equipmentName: app.Equipment
 }
 
 export default new app.Table<EquipmentCrafting>({

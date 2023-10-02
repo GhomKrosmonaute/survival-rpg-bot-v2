@@ -2,7 +2,7 @@ import * as app from "../app.js"
 
 export interface PlayerTitle {
   playerId: number
-  titleId: number
+  titleId: app.Title
 }
 
 export default new app.Table<PlayerTitle>({

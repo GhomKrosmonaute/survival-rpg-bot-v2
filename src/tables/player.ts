@@ -2,7 +2,7 @@ import * as app from "../app.js"
 
 export interface Player {
   id: number
-  worldName: app.WorldName
+  worldId: number
   goldCoins: number
   lotoWinCount: number
   lotoLoseCount: number

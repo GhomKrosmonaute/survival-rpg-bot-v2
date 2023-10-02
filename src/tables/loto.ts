@@ -1,7 +1,7 @@
 import * as app from "../app.js"
 
 export interface Loto {
-  worldName: app.WorldName
+  worldId: number
   winnerCount: number
   repayCount: number
   jackpot: number

@@ -1,8 +1,8 @@
 import * as app from "../app.js"
 
 export interface PotionTemporary {
-  potionName: app.PotionName
-  temporaryName: app.TemporaryName
+  potionName: app.Potion
+  temporaryId: number
   duration: number
 }
 

@@ -2,7 +2,7 @@ import * as app from "../app.js"
 
 export interface PlayerStat {
   playerId: number
-  statName: app.StatName
+  statName: app.Stat
   value: number
 }
 

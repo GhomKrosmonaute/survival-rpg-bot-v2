@@ -3,7 +3,7 @@ import * as app from "../app.js"
 export interface Title {
   id: number
   name: string
-  worldName: app.WorldName
+  worldId: number
 }
 
 export default new app.Table<Title>({
@@ -18,7 +18,27 @@ export default new app.Table<Title>({
 
 export const titles: Omit<Title, "id">[] = [
   {
+    name: "Aventurier débutant",
+    worldId: 0,
+  },
+  {
+    name: "Maître chien démoniaque 👿",
+    worldId: 0,
+  },
+  {
+    name: "Ornithologue sacré 🦅",
+    worldId: 0,
+  },
+  {
     name: "Purificateur de purificateur 🔥",
-    worldName: app.WorldName.Euphoria,
+    worldId: 0,
+  },
+  {
+    name: "Chasseur de dragons 🐲",
+    worldId: 0,
+  },
+  {
+    name: "Renégat 🔱",
+    worldId: 0,
   },
 ]

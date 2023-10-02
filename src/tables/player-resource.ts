@@ -2,7 +2,7 @@ import * as app from "../app.js"
 
 export interface PlayerResource {
   playerId: number
-  resourceName: app.ResourceName
+  resourceName: app.Resource
   amount: number
 }
 

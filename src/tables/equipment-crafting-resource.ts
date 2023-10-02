@@ -2,7 +2,7 @@ import * as app from "../app.js"
 
 export interface EquipmentCraftingResource {
   equipmentCraftingId: number
-  resourceName: app.ResourceName
+  resourceName: app.Resource
   amount: number
 }
 

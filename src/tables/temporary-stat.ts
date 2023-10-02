@@ -1,8 +1,8 @@
 import * as app from "../app.js"
 
 export interface TemporaryStat {
-  temporaryName: app.TemporaryName
-  statName: app.StatName
+  temporaryId: app.Temporary
+  statId: app.Stat
   percentage: number
 }
 
@@ -11,48 +11,44 @@ export default new app.Table<TemporaryStat>({
   description: "The temporary-stat table",
   setup: (table) => {
     table
-      .string("temporaryName")
-      .references("name")
+      .integer("temporaryId")
+      .references("id")
       .inTable("temporary")
       .onDelete("CASCADE")
-    table
-      .string("statName")
-      .references("name")
-      .inTable("stat")
-      .onDelete("CASCADE")
+    table.integer("statId").references("id").inTable("stat").onDelete("CASCADE")
     table.integer("percentage").notNullable()
   },
 })
 
 export const temporaryStats: TemporaryStat[] = [
   {
-    temporaryName: app.TemporaryName.Strength,
-    statName: app.StatName.Strength,
+    temporaryId: app.Temporary.Strength,
+    statId: app.Stat.Strength,
     percentage: 10,
   },
   {
-    temporaryName: app.TemporaryName.Resistance,
-    statName: app.StatName.Resistance,
+    temporaryId: app.Temporary.Resistance,
+    statId: app.Stat.Resistance,
     percentage: 10,
   },
   {
-    temporaryName: app.TemporaryName.Luck,
-    statName: app.StatName.Luck,
+    temporaryId: app.Temporary.Luck,
+    statId: app.Stat.Luck,
     percentage: 10,
   },
   {
-    temporaryName: app.TemporaryName.Drunkenness,
-    statName: app.StatName.Luck,
+    temporaryId: app.Temporary.Drunkenness,
+    statId: app.Stat.Luck,
     percentage: 10,
   },
   {
-    temporaryName: app.TemporaryName.Drunkenness,
-    statName: app.StatName.Strength,
+    temporaryId: app.Temporary.Drunkenness,
+    statId: app.Stat.Strength,
     percentage: -5,
   },
   {
-    temporaryName: app.TemporaryName.Drunkenness,
-    statName: app.StatName.Resistance,
+    temporaryId: app.Temporary.Drunkenness,
+    statId: app.Stat.Resistance,
     percentage: -5,
   },
 ]
